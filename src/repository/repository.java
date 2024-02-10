@@ -8,10 +8,17 @@ import model.Mesa;
 import model.Reserva;
 
 public class repository {
-    private ArrayList <Reserva> listasDeReservas = new ArrayList<Reserva>();
-    private ArrayList <Cliente> listaDeClientes = new ArrayList<Cliente>();
-    private ArrayList <Mesa> listaDeMesas = new ArrayList<Mesa>(); 
-    private ArrayList <LocalDateTime> listaDeHorarios = new ArrayList<LocalDateTime>();
+    private ArrayList <Reserva> listasDeReservas;
+    private ArrayList <Cliente> listaDeClientes;
+    private ArrayList <Mesa> listaDeMesas;
+    private ArrayList <LocalDateTime> listaDeHorarios;
+
+    public repository(){
+        listasDeReservas = new ArrayList<Reserva>();
+        listaDeClientes = new ArrayList<Cliente>();
+        listaDeMesas = new ArrayList<Mesa>();
+        listaDeHorarios = new ArrayList<LocalDateTime>();
+    }
 
 
     public void setListasDeReservas(ArrayList<Reserva> listasDeReservas) {
